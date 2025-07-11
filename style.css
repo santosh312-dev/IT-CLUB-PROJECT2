@@ -1,0 +1,283 @@
+/* for whole web page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* for body (visible area of web page) except title bar */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* for menubar  */
+nav{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+/*  to keep menubar sticky at the top */
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+/* for logo image  */
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* for menu items of ul */
+.menu{
+    display: flex;
+    gap: 65px;
+    list-style: none;
+}
+/* for menu items os ul li > a */
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* for hero section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 65px;
+    gap: 160px;
+}
+/* for hero section left side */
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+/* for hero-left h1 */
+.hero-left h1{
+    font-size: 50px;
+}
+/* for hero-left h1 span */
+.hero-left h1 span{
+    color: red;
+}
+/* for right side of hero section */
+.hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+/* for all input box  */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select
+ {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+.gender{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px
+}
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    width: calc(100vw -55px);
+}
+
+/* for about section */
+html{
+    scroll-behavior: smooth;
+}
+.about {
+    background-color: #ffffff;
+    min-height: 100vh;
+    border-radius: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: 40px auto;
+    color: #333;
+    line-height: 1.7;
+    padding-top: 75px;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.btns {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.btn-outline:hover {
+    background-color: #3498db;
+    color: white;
+}
+/* for projects */
+.projects {
+    padding-left: 55px;
+    padding-right: 55px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 100vh;
+    padding-top: 75px;
+
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: left;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+}
+.project-img{
+    width: 250px;
+    height: 250px;
+}
+
+/* for contact */
+
+.contact {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 70px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #2980b9;
+}
