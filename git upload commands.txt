@@ -7,9 +7,19 @@ git add .
 # Step 3: Commit the changes
 git commit -m "Initial commit"
 
+git branch -M main
+
+
 # Step 4: Add the remote repository URL
 git remote add origin https://github.com/your-username/your-repo-name.git
 
 # Step 5: Push to the remote repository
 git push -u origin main  # or use 'master' if your branch is named 'master'
+
+
+If you get an error like non-fast-forward, it usually means the remote already has content. To fix it:
+
+git add .
+git commit -m "Your message"
+git push origin main
 
